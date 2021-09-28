@@ -3,9 +3,13 @@ html {
   font: 16px/1.5 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* body {
-  box-sizing: border-box;
-} */
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
 
 h1 {
   margin: 0;
@@ -20,12 +24,17 @@ h2 {
   font-size: 1.8em;
 }
 
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
 .header {
   position: fixed;
 
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  width: calc(100% - 40px);
   height: 60px;
   padding: 5px 20px;
 
@@ -49,14 +58,90 @@ h2 {
 
 nav ul {
   display: flex;
+  gap: 20px;
   padding: 0;
-
-  list-style: none;
 }
 
-a {
-  padding-right: 10px;
-
+nav a {
   color: #000;
   text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  padding: 60px;
+
+  color: #fff;
+
+  background: url('./images/banner.png') center;
+  background-size: cover;
+}
+
+.hero .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.hero-logo {
+  width: 120px;
+}
+
+.hero a {
+  padding: 10px;
+
+  border: 1px solid #fff;
+  border-radius: 10px;
+
+  color: inherit;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.features {
+  padding: 60px;
+}
+
+.features ul {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.features-item {
+  width: 31%;
+}
+
+.review {
+  padding: 60px 0;
+
+  background-color: #f7f7f7;
+}
+
+.review-description,
+.relax-description {
+  width: 45%;
+}
+
+.relax {
+  padding: 60px;
+}
+
+.relax-description {
+  padding-left: 55%;
+}
+
+.review img {
+  float: right;
+  width: 30%;
+}
+
+.relax img {
+  float: left;
+  width: 30%;
 }
