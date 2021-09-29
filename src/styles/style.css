@@ -7,8 +7,9 @@ body {
   margin: 0;
 }
 
-ul {
-  list-style: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 h1 {
@@ -60,11 +61,8 @@ nav ul {
   display: flex;
   gap: 20px;
   padding: 0;
-}
 
-nav a {
-  color: #000;
-  text-decoration: none;
+  list-style: none;
 }
 
 .hero {
@@ -91,7 +89,8 @@ nav a {
   width: 120px;
 }
 
-.hero a {
+.hero a,
+button {
   padding: 10px;
 
   border: 1px solid #fff;
@@ -111,6 +110,8 @@ nav a {
   display: flex;
   gap: 30px;
   justify-content: center;
+
+  list-style: none;
 }
 
 .features-item {
@@ -144,4 +145,96 @@ nav a {
 .relax img {
   float: left;
   width: 30%;
+}
+
+.ordering {
+  padding: 60px 0;
+
+  background-color: #f7f7f7;
+}
+
+.ordering h2 {
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
+fieldset {
+  margin: 15px 0;
+  padding-bottom: 20px;
+  border: 1px solid #09d3ac;
+
+  font-weight: bold;
+}
+
+legend {
+  color: #09d3ac;
+}
+
+select,
+input {
+  width: 50%;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.btn-submit {
+  border: 1px solid #09d3ac;
+
+  color: #09d3ac;
+
+  background-color: #f7f7f7;
+
+  cursor: pointer;
+}
+
+.order-form-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 0;
+
+  color: #fff;
+
+  background-color: #303846;
+}
+
+.footer h3 {
+  margin: 0;
+
+  font-size: 1em;
+}
+
+.footer-logo {
+  position: relative;
+}
+
+.footer span {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+
+  width: max-content;
+
+  font-weight: bold;
+}
+
+.footer-img {
+  width: 40px;
+}
+
+small {
+  display: block;
+
+  color: rgb(131, 133, 130);
 }
