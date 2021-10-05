@@ -1,3 +1,21 @@
+@font-face {
+  font-weight: 400;
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Neucha';
+  src: url('../assets/fonts/Neucha-Regular.ttf');
+}
+
 /* reset default styles */
 *,
 *::before,
@@ -29,21 +47,28 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
-p {
-  padding: 0 0 6px 0;
+  font-family: inherit/1.2em 'Neucha', sans-serif;
 }
 
 /* =====utils & commons=========================== */
+:root {
+  --main: #fe8a02;
+  --main-dark: #42413c;
+  --white: #fff;
+  --transp-white: #d7ccc0;
+  --dark: #2a2626;
+  --transp-dark: #908d8b;
+  --light: #f5f4f0;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
+
 html,
 body {
   height: 100%;
 
-  color: #303846;
-  font: 16px/1.5 sans-serif;
+  color: var(--dark);
+  font: 16px/1.6em 'Open Sans', sans-serif;
 }
 
 .wrapper {
@@ -52,6 +77,19 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1110px;
   margin: 0 auto;
+  padding: 100px 0 100px 0;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
 }
