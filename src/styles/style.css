@@ -102,7 +102,7 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -100;
+  z-index: -20;
 
   width: 100%;
   height: 100%;
@@ -120,9 +120,14 @@ h3 {
 
   padding: 12px 24px;
 
+  color: var(--white);
   font-weight: bold;
 
   background-color: var(--main);
+}
+
+.btn:hover {
+  background-color: #ea7600;
 }
 
 .pos-r {
@@ -133,7 +138,21 @@ h3 {
   position: absolute;
 }
 
+.bg-gray {
+  z-index: -30;
+
+  background-color: var(--light);
+}
+
+.bg-dark {
+  background-color: var(--main-dark);
+}
+
 /* ===============header================ */
+.header {
+  z-index: 1;
+}
+
 .header-img {
   position: absolute;
   top: 55px;
@@ -159,6 +178,82 @@ h3 {
   width: 50%;
 }
 
-.header span {
+header span,
+.hero span {
   color: var(--main);
+}
+
+/* ========================================================================================= */
+.hero {
+  text-align: center;
+}
+
+.hero-title {
+  margin: 0 0 30px 0;
+}
+
+.hero-text {
+  margin: 0 0 30px 0;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+/* =============nav============================================================================ */
+.menu {
+  margin: -200px 0 0 0;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 200px;
+}
+
+.menu-title {
+  width: 350px;
+  margin: 0 30px 20px 0;
+
+  color: var(--white);
+  font-size: 52px;
+}
+
+.menu span,
+.menu h3 {
+  color: var(--main);
+}
+
+.menu-item {
+  display: block;
+  width: 350px;
+  margin: 0 30px 20px 0;
+  padding: 24px;
+
+  background-color: var(--light);
+}
+
+.menu-item:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.menu-item:nth-child(n+4) {
+  margin-bottom: 0;
+}
+
+.menu-item:hover,
+.menu-item:hover h3 {
+  color: var(--white);
+
+  background-color: var(--main);
+}
+
+.menu-link-number {
+  margin: 0 0 40px 0;
+
+  font: 64px/1 Neucha, sans-serif;
+}
+
+.menu p {
+  margin-bottom: 0;
 }
