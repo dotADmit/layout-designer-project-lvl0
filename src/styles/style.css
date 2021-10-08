@@ -21,17 +21,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-
-  /* margin: 0;
-  padding: 0;
-  border: 0; */
 }
-
-/* ul,
-ol,
-li {
-  list-style: none;
-} */
 
 a {
   color: inherit;
@@ -40,10 +30,6 @@ a {
 
 img {
   vertical-align: top;
-}
-
-p {
-  margin: 16px 0 16px 0;
 }
 
 /* =====utils & commons=========================== */
@@ -62,6 +48,9 @@ p {
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
 
   color: var(--dark);
   font: 16px/1.6em 'Open Sans', sans-serif;
@@ -93,10 +82,14 @@ h1 {
 }
 
 h2 {
+  margin: 0 0 30px 0;
+
   font-size: 60px;
 }
 
 h3 {
+  margin: 0;
+
   font-size: 34px;
 }
 
@@ -145,8 +138,6 @@ h5 {
 }
 
 .bg-gray {
-  z-index: -30;
-
   background-color: var(--light);
 }
 
@@ -206,10 +197,6 @@ header span,
   text-align: center;
 }
 
-.hero-title {
-  margin: 0 0 30px 0;
-}
-
 .hero-text {
   margin: 0 0 30px 0;
 }
@@ -262,7 +249,7 @@ header span,
 }
 
 /* =============main============================================================================ */
-.main-item-container {
+.main-item {
   z-index: 1;
 }
 
@@ -295,20 +282,17 @@ header span,
   font-size: 24px;
 }
 
-.main-item-title {
+.main-item-subtitle {
   margin: 100px 0 20px 0;
   padding: 5px 10px;
 
   color: var(--white);
-
-  background-color: var(--brown);
-}
-
-.main-item-subtitle {
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
 
   text-transform: uppercase;
+
+  background-color: var(--brown);
 }
 
 .main-item-text {
@@ -316,15 +300,17 @@ header span,
   gap: 30px;
 }
 
-.main-item-container:nth-child(2n) {
+.main-item:nth-child(2n) .main-item-container,
+.main-item:nth-child(2n) .main-item-header,
+.main-item:nth-child(2n) .main-item-header-title {
   color: var(--white);
 }
 
-.main-item-container:nth-child(2n) .main-item-header-span {
+.main-item:nth-child(2n) .main-item-header-span {
   color: var(--transp-white);
 }
 
-.main-item-container:nth-child(2n) .main-item-subtitle {
+.main-item:nth-child(2n) .main-item-subtitle {
   color: var(--brown);
 
   background-color: var(--white);
