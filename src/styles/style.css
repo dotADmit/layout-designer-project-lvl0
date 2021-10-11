@@ -418,7 +418,7 @@ header span,
 .main-item-img {
   position: relative;
 
-  width: 100%;
+  max-width: 578px;
 }
 
 .main-item-header-reverse {
@@ -456,6 +456,14 @@ header span,
 .main-item-text {
   display: flex;
   gap: 30px;
+}
+
+@media (max-width: 1000px) {
+  .main-item-img {
+    position: relative;
+
+    width: 100%;
+  }
 }
 
 @media (max-width: 862px) {
